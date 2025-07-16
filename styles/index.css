@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: normal;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background-image: url('../assert/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 500px;
+}
+
+.form {
+    position: absolute;
+    display: none;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    height: 384px;
+    width: 450px;
+    box-sizing: border-box;
+}
+
+#register {
+    height: 574px;
+}
+
+form.isShow {
+    display: block;
+}
+
+.form .fieldset {
+    text-align: center;
+}
+
+.fieldset .title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fieldset .label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.label .iconfont {
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right: none;
+    box-sizing: border-box;
+}
+
+.label .icon-account {
+    font-size: 25px;
+}
+
+.label .icon-nickname {
+    font-size: 30px;
+}
+
+.label .icon-password {
+    font-size: 35px;
+}
+
+.label .input {
+    width: 400px;
+    height: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-left-width: 0px;
+    border-style: solid;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.input::-webkit-input-placeholder {
+    color: rgb(153, 153, 153);
+}
+
+.input::-moz-placeholder {
+    color: rgb(153, 153, 153);
+}
+
+.input:-ms-input-placeholder {
+    color: rgb(153, 153, 153);
+}
+
+.input::-ms-input-placeholder {
+    color: rgb(153, 153, 153);
+}
+
+.input::placeholder {
+    color: rgb(153, 153, 153);
+}
+
+.fieldset .button {
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgba(255, 221, 189, 0.8);
+    color: rgb(0, 0, 0);
+    font-size: inherit;
+    cursor: pointer;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.text .text-link {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}

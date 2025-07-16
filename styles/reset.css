@@ -1,0 +1,32 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+em {
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, textarea, input, button {
+    line-height: normal;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: inherit;
+}
+
+fieldset, legend {
+    border-style: unset;
+    border-width: 0px;
+    border-color: inherit;
+    -o-border-image: none;
+    border-image: none;
+    padding-block: 0px;
+    padding-inline: 0px;
+    margin-inline: 0px;
+    min-inline-size: inherit;
+}
+
+input, button, textarea {
+    border: none;
+    outline: none;
+}

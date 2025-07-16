@@ -1,0 +1,23 @@
+.small-font-size {
+    font-size: 14px;
+}
+
+.big-font-size {
+    font-size: 18px;
+}
+
+.blur-font-color {
+    color: rgb(153, 153, 153);
+}
+
+.focus-font-color {
+    color: rgb(204, 204, 204);
+}
+
+.error {
+    display: block;
+    padding: 5px 0px;
+    visibility: hidden;
+    text-align: left;
+    color: rgb(255, 186, 207);
+}

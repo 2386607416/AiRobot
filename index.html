@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="AI, Robot, JavaScript" />
+        <meta name="author" content="Your Name" />
+        <meta
+            name="description"
+            content="A simple AI Robot interface using JavaScript"
+        />
+        <link rel="icon" href="./assert/favicon.ico" />
+        <link rel="stylesheet" href="./styles/iconfont.css" />
+        <link rel="stylesheet" href="./styles/reset.css" />
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" href="./styles/common.css" />
+        <script type="text/javascript" src="./scripts/fetch.js"></script>
+        <script type="text/javascript" src="./scripts/from.js"></script>
+        <script type="text/javascript" src="./scripts/login.js"></script>
+        <script type="text/javascript" src="./scripts/register.js"></script>
+        <script type="text/javascript" src="./scripts/executor.js"></script>
+        <script type="text/javascript " src="./scripts/index.js"></script>
+        <title>AI Robot</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <form id="login" class="form isShow" name="login">
+                <fieldset
+                    form="login"
+                    class="fieldset login focus-font-color big-font-size"
+                >
+                    <legend class="title">首页</legend>
+                    <label class="label">
+                        <span class="iconfont icon-account"></span>
+                        <input
+                            class="input account"
+                            type="text"
+                            placeholder="请输入账号"
+                            name="account"
+                        />
+                        <em class="error small-font-size account-error">
+                            账号不能为空
+                        </em>
+                    </label>
+                    <label class="label">
+                        <span class="iconfont icon-password"></span>
+                        <input
+                            class="input password"
+                            type="password"
+                            placeholder="请输入密码"
+                            name="password"
+                        />
+                        <em class="error small-font-size password-error">
+                            密码不能为空
+                        </em>
+                    </label>
+                    <button class="button login-button" type="button">
+                        登录
+                    </button>
+                    <p class="text small-font-size">
+                        <span class="text-span">没有账号？</span>
+                        <a class="text-link go-to-register" href="#register">
+                            点击去注册
+                        </a>
+                    </p>
+                </fieldset>
+            </form>
+            <form id="register" class="form" name="register">
+                <fieldset
+                    form="register"
+                    class="fieldset register focus-font-color big-font-size"
+                >
+                    <legend class="title">注册</legend>
+                    <label class="label">
+                        <span class="iconfont icon-account"></span>
+                        <input
+                            class="input account"
+                            type="text"
+                            placeholder="请输入账号"
+                            name="account"
+                        />
+                        <em class="error small-font-size account-error">
+                            账号不能为空
+                        </em>
+                    </label>
+                    <label class="label">
+                        <span class="iconfont icon-nickname"></span>
+                        <input
+                            class="input nickname"
+                            type="text"
+                            placeholder="请输入昵称"
+                            name="nickname"
+                        />
+                        <em class="error small-font-size nickname-error">
+                            昵称不能为空
+                        </em>
+                    </label>
+                    <label class="label">
+                        <span class="iconfont icon-password"></span>
+                        <input
+                            class="input password"
+                            type="password"
+                            placeholder="请输入密码"
+                            name="password"
+                        />
+                        <em class="error small-font-size password-error">
+                            密码不能为空
+                        </em>
+                    </label>
+                    <label class="label">
+                        <span class="iconfont icon-password"></span>
+                        <input
+                            class="input confirm-password"
+                            type="password"
+                            placeholder="请再一次输入密码"
+                            name="confirm-password"
+                        />
+                        <em
+                            class="error small-font-size confirm-password-error"
+                        >
+                            与原始密码不正确
+                        </em>
+                    </label>
+                    <button class="button register-button" type="button">
+                        注册
+                    </button>
+                    <p class="text small-font-size">
+                        <span class="text-span">已有账号？</span>
+                        <a class="text-link go-to-login" href="#lgoin">
+                            点击去登录
+                        </a>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 1200px;
+    height: 800px;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 900px;
+    box-sizing: border-box;
+}
+
+.main .chat-content {
+    width: 100%;
+    height: 600px;
+    background-color: rgba(199, 199, 199, 0.5);
+    box-sizing: border-box;
+}
+
+.main .label {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.main .textarea {
+    inset-inline: 10px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+
+.label .button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(224, 211, 168);
+    border-radius: 10px;
+    cursor: pointer;
+}
