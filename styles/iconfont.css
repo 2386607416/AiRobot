@@ -1,9 +1,9 @@
 @font-face {
   font-family: "iconfont";
   /* Project id 4973858 */
-  src: url('./../assert/font/iconfont.woff2?t=1752453721767') format('woff2'),
-    url('./../assert/font/iconfont.woff?t=1752453721767') format('woff'),
-    url('./../assert/font/iconfont.ttf?t=1752453721767') format('truetype');
+  src: url('./../asset/font/iconfont.woff2?t=1752453721767') format('woff2'),
+    url('./../asset/font/iconfont.woff?t=1752453721767') format('woff'),
+    url('./../asset/font/iconfont.ttf?t=1752453721767') format('truetype');
 }
 
 .iconfont {
@@ -12,6 +12,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\e695";
 }
 
 .icon-nickname:before {

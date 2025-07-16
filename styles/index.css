@@ -14,7 +14,7 @@ body, html {
 
 body {
     color: rgb(255, 255, 255);
-    background-image: url('../assert/background.png');
+    background-image: url('./../asset/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

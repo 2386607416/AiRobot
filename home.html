@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="AI, Robot, JavaScript" />
+        <meta name="author" content="Your Name" />
+        <meta
+            name="description"
+            content="A simple AI Robot interface using JavaScript"
+        />
+        <link rel="icon" href="./asset/favicon.ico" />
+        <link rel="stylesheet" href="./styles/iconfont.css" />
+        <link rel="stylesheet" href="./styles/reset.css" />
+        <link rel="stylesheet" href="./styles/common.css" />
+        <link rel="stylesheet" href="./styles/home.css" />
+        <script type="text/javascript" src="./scripts/fetch.js"></script>
+        <script type="text/javascript" src="./scripts/executor.js"></script>
+        <script type="text/javascript" src="./scripts/chat.js"></script>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="main">
+                <h1 class="main-title">
+                    <img src="./asset/robot.png" alt="" />
+                    AI 聊天机器人
+                </h1>
+                <div class="chat-container"></div>
+                <form class="msg-container">
+                    <input
+                        type="text"
+                        id="txtMsg"
+                        placeholder="在这里输入要发送的消息，按回车键即可发送"
+                    />
+                    <button type="submit">发送</button>
+                </form>
+            </div>
+            <div class="aside">
+                <img src="./asset/avatar.png" class="aside-avatar" alt="" />
+                <p id="nickname" class="aside-name"></p>
+                <p id="loginId" class="aside-account"></p>
+            </div>
+            <div class="close">
+                <i class="iconfont icon-close"></i>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        (async function () {
+            const { body: data } = await Executor.getCurrentLoginUserInfo();
+            const nicknameElement = document.getElementById("nickname");
+            const loginIdElement = document.getElementById("loginId");
+
+            if (data.code) {
+                window.alert(data.msg);
+                location.assign("./index.html");
+            } else {
+                nicknameElement.innerText = data.data.nickname;
+                loginIdElement.innerText = data.data.loginId;
+            }
+        })();
+
+        const chat = new Chat();
+    </script>
+</html>

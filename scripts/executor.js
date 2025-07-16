@@ -1,8 +1,8 @@
 class Executor {
     instance = undefined;
-    verification = new Fetch("/api/user/exists?loginId=");
-    currentUserInfo = new Fetch("/api/user/profile");
-    chatRecord = new Fetch("/api/chat/history");
+    static verification = new Fetch("/api/user/exists?loginId=");
+    static currentUserInfo = new Fetch("/api/user/profile");
+    static chatRecord = new Fetch("/api/chat/history");
 
     constructor(loginData, registerData) {
         this.login = new Login(loginData);
@@ -19,19 +19,19 @@ class Executor {
         return this.instance;
     }
 
-    verificationAccount(loginId) {
-        this.verification.path += loginId;
-        return this.verification.get();
+    static verificationAccount(loginId) {
+        Executor.verification.path += loginId;
+        return Executor.verification.get();
     }
 
-    getCurrentLoginUserInfo() {
-        return this.currentUserInfo.get({
+    static getCurrentLoginUserInfo() {
+        return Executor.currentUserInfo.get({
             authorization: Fetch.token ? `Bearer ${Fetch.token}` : null,
         });
     }
 
-    getChatRecord() {
-        return this.chatRecord.get({
+    static getChatRecord() {
+        return Executor.chatRecord.get({
             authorization: Fetch.token ? `Bearer ${Fetch.token}` : null,
         });
     }

@@ -80,7 +80,10 @@ class Login extends From {
                      */
                     localStorage.setItem("token", Fetch.token);
 
+                    // 将错误提示隐藏
                     this.hiddenError(this.passwordErrorElement);
+                    // 登录成功跳转页面
+                    location.assign("./home.html");
                 }
             }
         });

@@ -7,7 +7,9 @@ em {
     font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6, textarea, input, button {
+p, h1, h2, h3, h4, h5, h6, textarea, input, button {
+    margin: 0px;
+    padding: 0px;
     line-height: normal;
     font-family: inherit;
     font-weight: normal;
